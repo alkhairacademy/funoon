@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+"use client";
+
+import React, { useState } from "react";
 
 export default function FunoonDashboard() {
   const [showResults, setShowResults] = useState(false);
