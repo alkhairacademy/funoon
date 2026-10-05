@@ -63,7 +63,7 @@ export default function FunoonDashboard() {
             <div className="text-3xl font-serif font-bold tracking-wide text-red-700">Yaqooth</div>
           </div>
           <div className="text-6xl font-black text-red-950 relative z-10">
-            30 <span className="text-lg font-normal text-red-700/80">Points</span>
+            100 <span className="text-lg font-normal text-red-700/80">Points</span>
           </div>
         </div>
 
