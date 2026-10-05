@@ -14,9 +14,16 @@ export default function FunoonDashboard() {
       {/* Top Header Section */}
       <header className="flex justify-between items-center bg-[#F4EFE6] border border-[#D5CABD] p-5 md:p-6 rounded-2xl mb-8 shadow-xl shadow-[#A87C61]/10">
         <div className="flex items-center gap-3 md:gap-4">
+          {/* Islamic Star Logo */}
+          <div className="p-2">
+            <svg className="w-8 h-8 md:w-10 md:h-10 text-[#6D5A4B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
+              <rect x="4" y="4" width="16" height="16" transform="rotate(45 12 12)" />
+              <rect x="4" y="4" width="16" height="16" />
+            </svg>
+          </div>
           <div>
             <h1 className="text-2xl md:text-3xl font-serif font-bold text-[#6D5A4B] tracking-wide">
-              FUNOON <span className="font-bold text-[#4A4238]">2026</span>
+              FUNOON 2026
             </h1>
             <div className="text-[#A87C61] text-xs mt-1 font-semibold tracking-widest uppercase">
               Islamic Arts Fest
@@ -36,42 +43,39 @@ export default function FunoonDashboard() {
       {/* Score Cards Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
         
-        {/* Zumarad */}
-        <div className="bg-[#F4EFE6] p-8 rounded-3xl border border-[#D5CABD] shadow-[0_10px_40px_-15px_rgba(139,144,117,0.3)] relative overflow-hidden group">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#8B9075]/20 via-transparent to-[#8B9075]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+        {/* Zumarad (Green Theme) */}
+        <div className="bg-[#F4EFE6] p-8 rounded-3xl border border-emerald-300 shadow-[0_10px_40px_-15px_rgba(16,185,129,0.4)] relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-transparent to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
           <div className="flex justify-between items-center mb-6 relative z-10">
-            <div className="px-4 py-1.5 bg-[#8B9075]/20 text-[#61654C] rounded-xl text-xs font-bold tracking-widest uppercase shadow-sm">Team A</div>
-            <div className="text-2xl font-serif font-bold tracking-wide text-[#6D5A4B]">Zumarad</div>
+            <div className="px-4 py-1.5 bg-emerald-100 text-emerald-800 rounded-xl text-xs font-bold tracking-widest uppercase shadow-sm">Team A</div>
+            <div className="text-3xl font-serif font-bold tracking-wide text-emerald-700">Zumarad</div>
           </div>
-          <div className="text-6xl font-black text-[#4A4238] relative z-10">
-            50 <span className="text-lg font-normal text-[#8A7D71]">Points</span>
+          <div className="text-6xl font-black text-emerald-950 relative z-10">
+            50 <span className="text-lg font-normal text-emerald-700/80">Points</span>
           </div>
         </div>
 
-        {/* Yaqooth */}
-        <div className="bg-[#F4EFE6] p-8 rounded-3xl border border-[#D5CABD] shadow-[0_10px_40px_-15px_rgba(168,124,97,0.3)] relative overflow-hidden group">
-          <div className="absolute inset-0 bg-gradient-to-r from-[#A87C61]/20 via-transparent to-[#A87C61]/20 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
+        {/* Yaqooth (Red Theme) */}
+        <div className="bg-[#F4EFE6] p-8 rounded-3xl border border-red-300 shadow-[0_10px_40px_-15px_rgba(239,68,68,0.4)] relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 via-transparent to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
           <div className="flex justify-between items-center mb-6 relative z-10">
-             <div className="px-4 py-1.5 bg-[#A87C61]/20 text-[#8B5E41] rounded-xl text-xs font-bold tracking-widest uppercase shadow-sm">Team B</div>
-            <div className="text-2xl font-serif font-bold tracking-wide text-[#6D5A4B]">Yaqooth</div>
+             <div className="px-4 py-1.5 bg-red-100 text-red-800 rounded-xl text-xs font-bold tracking-widest uppercase shadow-sm">Team B</div>
+            <div className="text-3xl font-serif font-bold tracking-wide text-red-700">Yaqooth</div>
           </div>
-          <div className="text-6xl font-black text-[#4A4238] relative z-10">
-            30 <span className="text-lg font-normal text-[#8A7D71]">Points</span>
+          <div className="text-6xl font-black text-red-950 relative z-10">
+            30 <span className="text-lg font-normal text-red-700/80">Points</span>
           </div>
         </div>
 
       </div>
 
-      {/* Bottom Section: Current & Next Program + Leaderboard */}
+      {/* Bottom Section: Current Program & Leaderboard */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         {/* Current Program */}
         <div className="md:col-span-2 bg-[#F4EFE6] p-8 rounded-3xl border border-[#D5CABD] shadow-lg relative overflow-hidden">
           <div className="absolute inset-x-0 top-0 h-3 bg-[#A87C61]"></div>
           <div className="text-xs text-[#8A7D71] mb-4 font-bold tracking-widest uppercase">Current Program</div>
-          <div className="inline-block bg-[#A87C61]/10 text-[#8B5E41] text-xs px-5 py-1.5 rounded-full mb-5 font-bold border border-[#A87C61]/20 shadow-sm">
-            • Now Happening
-          </div>
           <h2 className="text-3xl md:text-4xl font-serif font-bold mb-2 text-[#4A4238]">Senior Malayalam Speech</h2>
         </div>
 
@@ -80,8 +84,8 @@ export default function FunoonDashboard() {
           <div className="text-xs text-[#4A4238] mb-1 font-bold tracking-widest uppercase opacity-70">
              Currently Leading
           </div>
-          <h2 className="text-3xl font-serif font-bold text-[#4A4238] mb-0.5">Zumarad</h2>
-          <div className="text-[#6D5A4B] text-sm font-semibold tracking-wide">
+          <h2 className="text-3xl font-serif font-bold text-emerald-800 mb-0.5">Zumarad</h2>
+          <div className="text-emerald-700/80 text-sm font-semibold tracking-wide">
             With 50 Points
           </div>
         </div>
