@@ -27,7 +27,7 @@ export default function FunoonDashboard() {
         <div className="flex items-center gap-2 md:gap-4 flex-1">
           {/* Logo Image */}
           <div className="p-1 md:p-2 shrink-0">
-            <img src="/funoon.png" alt="Funoon Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain" />
+            <img src="/funoon.png" alt="Funoon Logo" className="w-18 h-18 md:w-26 md:h-26 object-contain" />
           </div>
           
           <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
