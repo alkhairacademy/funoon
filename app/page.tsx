@@ -14,17 +14,17 @@ export default function FunoonDashboard() {
       {/* Top Header Section */}
       <header className="flex justify-between items-center bg-[#F4EFE6] border border-[#D5CABD] p-4 md:p-6 rounded-2xl mb-8 shadow-xl shadow-[#A87C61]/10">
         <div className="flex items-center gap-2 md:gap-4 flex-1">
-          {/* Replaced SVG with Logo Image */}
+          {/* Logo Image */}
           <div className="p-1 md:p-2 shrink-0">
-            <img src="/funoon.png" alt="Funoon Flag" className="w-8 h-8 md:w-10 md:h-10 object-contain" />
+            <img src="/funoon.png" alt="Funoon Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain" />
           </div>
           
           <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
             <div>
-              <h1 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-[#6D5A4B] tracking-wide">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-[#6D5A4B] tracking-wide truncate">
                 FUNOON 2026
               </h1>
-              <div className="text-[#A87C61] text-[10px] sm:text-xs mt-0.5 font-semibold tracking-widest uppercase">
+              <div className="text-[#A87C61] text-[10px] sm:text-xs mt-0.5 font-semibold tracking-widest uppercase truncate">
                 Islamic Arts Fest
               </div>
             </div>
