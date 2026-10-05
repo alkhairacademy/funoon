@@ -75,10 +75,10 @@ export default function FunoonDashboard() {
           <div className="text-6xl font-black text-emerald-950 relative z-10">
             50 <span className="text-lg font-normal text-emerald-700/80">Points</span>
           </div>
-          {/* Blinking Emerald Icon */}
+          {/* Blinking Diamond Icon for Emerald */}
           <div className="mt-4 animate-blink relative z-10 w-8 h-8 flex items-center justify-center bg-emerald-100 rounded-full text-emerald-600">
             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+              <path d="M12 2L2 12L12 22L22 12L12 2Z" />
             </svg>
           </div>
         </div>
@@ -93,10 +93,10 @@ export default function FunoonDashboard() {
           <div className="text-6xl font-black text-red-950 relative z-10">
             30 <span className="text-lg font-normal text-red-700/80">Points</span>
           </div>
-          {/* Blinking Ruby Icon */}
+          {/* Blinking Diamond Icon for Ruby */}
           <div className="mt-4 animate-blink relative z-10 w-8 h-8 flex items-center justify-center bg-red-100 rounded-full text-red-600">
-             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
+            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
+              <path d="M12 2L2 12L12 22L22 12L12 2Z" />
             </svg>
           </div>
         </div>
