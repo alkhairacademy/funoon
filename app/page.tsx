@@ -63,20 +63,30 @@ export default function FunoonDashboard() {
             <div className="text-3xl font-serif font-bold tracking-wide text-red-700">Yaqooth</div>
           </div>
           <div className="text-6xl font-black text-red-950 relative z-10">
-            100 <span className="text-lg font-normal text-red-700/80">Points</span>
+            30 <span className="text-lg font-normal text-red-700/80">Points</span>
           </div>
         </div>
 
       </div>
 
-      {/* Bottom Section: Current Program & Leaderboard */}
+      {/* Bottom Section: Current Program, Next Program & Leaderboard */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
         
-        {/* Current Program */}
-        <div className="md:col-span-2 bg-[#F4EFE6] p-8 rounded-3xl border border-[#D5CABD] shadow-lg relative overflow-hidden">
-          <div className="absolute inset-x-0 top-0 h-3 bg-[#A87C61]"></div>
-          <div className="text-xs text-[#8A7D71] mb-4 font-bold tracking-widest uppercase">Current Program</div>
-          <h2 className="text-3xl md:text-4xl font-serif font-bold mb-2 text-[#4A4238]">Senior Malayalam Speech</h2>
+        {/* Programs Column */}
+        <div className="md:col-span-2 flex flex-col gap-8">
+          {/* Current Program */}
+          <div className="bg-[#F4EFE6] p-8 rounded-3xl border border-[#D5CABD] shadow-lg relative overflow-hidden">
+            <div className="absolute inset-x-0 top-0 h-3 bg-[#A87C61]"></div>
+            <div className="text-xs text-[#8A7D71] mb-4 font-bold tracking-widest uppercase">Current Program</div>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-2 text-[#4A4238]">Senior Malayalam Speech</h2>
+          </div>
+
+          {/* Next Program */}
+          <div className="bg-[#F4EFE6] p-8 rounded-3xl border border-[#D5CABD] shadow-lg relative overflow-hidden">
+            <div className="absolute inset-x-0 top-0 h-3 bg-[#6D5A4B]"></div>
+            <div className="text-xs text-[#8A7D71] mb-4 font-bold tracking-widest uppercase">Next Program</div>
+            <h2 className="text-3xl md:text-4xl font-serif font-bold mb-2 text-[#4A4238]">Arabic Speech</h2>
+          </div>
         </div>
 
         {/* Current Leaderboard */}
@@ -84,9 +94,9 @@ export default function FunoonDashboard() {
           <div className="text-xs text-[#4A4238] mb-1 font-bold tracking-widest uppercase opacity-70">
              Currently Leading
           </div>
-          <h2 className="text-3xl font-serif font-bold text-ruby-800 mb-0.5">Yaqooth</h2>
-          <div className="text-ruby-700/80 text-sm font-semibold tracking-wide">
-            With 100  Points
+          <h2 className="text-3xl font-serif font-bold text-emerald-800 mb-0.5">Zumarad</h2>
+          <div className="text-emerald-700/80 text-sm font-semibold tracking-wide">
+            With 50 Points
           </div>
         </div>
 
@@ -101,8 +111,11 @@ export default function FunoonDashboard() {
           <div className="text-sm font-bold flex items-center gap-3 tracking-widest uppercase">
             Previous Program Results
           </div>
-          <div className="text-2xl font-light">
-            {showResults ? '−' : '+'}
+          {/* Glass Effect Icon Container */}
+          <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-md transition-transform duration-300 group-hover:scale-110">
+            <div className="text-2xl font-light leading-none">
+              {showResults ? '−' : '+'}
+            </div>
           </div>
         </button>
         
