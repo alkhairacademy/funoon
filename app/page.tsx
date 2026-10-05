@@ -45,7 +45,7 @@ export default function FunoonDashboard() {
             <div className="text-2xl">🥈</div>
             <div className="text-lg font-bold text-gray-400">Yaqooth</div>
           </div>
-          <div className="text-4xl font-bold text-white">30 <span className="text-sm text-gray-500 font-normal">PTS</span></div>
+          <div className="text-4xl font-bold text-white">80 <span className="text-sm text-gray-500 font-normal">PTS</span></div>
         </div>
 
       </div>
