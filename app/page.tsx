@@ -13,40 +13,40 @@ export default function FunoonDashboard() {
 
       {/* Top Header Section */}
       <header className="flex justify-between items-center bg-[#F4EFE6] border border-[#D5CABD] p-5 md:p-6 rounded-2xl mb-8 shadow-xl shadow-[#A87C61]/10">
-        <div className="flex items-center gap-3 md:gap-4">
+        <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
           {/* Islamic Star Logo */}
-          <div className="p-2">
+          <div className="p-2 shrink-0">
             <svg className="w-8 h-8 md:w-10 md:h-10 text-[#6D5A4B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <rect x="4" y="4" width="16" height="16" transform="rotate(45 12 12)" />
               <rect x="4" y="4" width="16" height="16" />
             </svg>
           </div>
           
-          <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6">
-            <div>
-              <h1 className="text-2xl md:text-3xl font-serif font-bold text-[#6D5A4B] tracking-wide">
+          <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 min-w-0">
+            <div className="min-w-0">
+              <h1 className="text-2xl md:text-3xl font-serif font-bold text-[#6D5A4B] tracking-wide truncate">
                 FUNOON 2026
               </h1>
-              <div className="text-[#A87C61] text-xs mt-1 font-semibold tracking-widest uppercase">
+              <div className="text-[#A87C61] text-xs mt-1 font-semibold tracking-widest uppercase truncate">
                 Islamic Arts Fest
               </div>
             </div>
 
-            {/* Added Calendar and Date Section */}
-            <div className="flex items-center gap-2 text-[#8A7D71] mt-1 md:mt-0 bg-[#E5DCCB]/60 px-3 py-1.5 rounded-lg border border-[#D5CABD]/50">
-              <svg className="w-4 h-4 text-[#A87C61]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            {/* Calendar and Date Section */}
+            <div className="flex items-center gap-1 text-[#8A7D71] bg-[#E5DCCB]/60 px-1.5 py-0.5 rounded-md border border-[#D5CABD]/50 w-max shrink-0">
+              <svg className="w-3 h-3 text-[#A87C61] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
                 <line x1="16" y1="2" x2="16" y2="6" />
                 <line x1="8" y1="2" x2="8" y2="6" />
                 <line x1="3" y1="10" x2="21" y2="10" />
               </svg>
-              <span className="text-sm font-semibold tracking-wider">11-10-2026, Saturday</span>
+              <span className="text-[10px] md:text-xs font-semibold tracking-wide">11-10-2026, Saturday</span>
             </div>
           </div>
         </div>
         
         {/* Total Programs */}
-        <div className="flex flex-col items-end border-l border-[#D5CABD] pl-4 md:pl-6">
+        <div className="flex flex-col items-end border-l border-[#D5CABD] pl-4 md:pl-6 shrink-0">
           <div className="text-[#8A7D71] text-xs font-bold tracking-wider uppercase mb-1">Total Programs</div>
           <div className="bg-[#A87C61] text-[#F4EFE6] px-4 py-1.5 rounded-xl text-lg md:text-xl font-bold shadow-md">
             120
@@ -125,7 +125,6 @@ export default function FunoonDashboard() {
           <div className="text-sm font-bold flex items-center gap-3 tracking-widest uppercase">
             Previous Program Results
           </div>
-          {/* Glass Effect Icon Container */}
           <div className="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-md transition-transform duration-300 group-hover:scale-110">
             <div className="text-2xl font-light leading-none">
               {showResults ? '−' : '+'}
@@ -176,6 +175,13 @@ export default function FunoonDashboard() {
             
           </div>
         )}
+      </div>
+
+      {/* Added Announcement Section */}
+      <div className="mt-8 bg-[#F4EFE6] p-6 rounded-3xl border border-[#D5CABD] shadow-lg flex items-center justify-center text-center animate-in fade-in zoom-in duration-700">
+        <h3 className="text-xl md:text-2xl font-serif font-bold text-[#6D5A4B]">
+          2026 ഫുനൂൻ കലാസാഹിത്യ മത്സരത്തിൽ സുമറദ് വിജയിച്ചിരിക്കുന്നു, ടീമിന് എല്ലാവിധ അഭിനന്ദനങ്ങളും!
+        </h3>
       </div>
       
     </div>
