@@ -12,28 +12,29 @@ export default function FunoonDashboard() {
       <div className="absolute bottom-0 left-0 w-1/2 h-1/2 bg-[#F4EFE6] transform origin-bottom-left skew-y-12 -z-10 -translate-x-1/4 opacity-20"></div>
 
       {/* Top Header Section */}
-      <header className="flex justify-between items-center bg-[#F4EFE6] border border-[#D5CABD] p-5 md:p-6 rounded-2xl mb-8 shadow-xl shadow-[#A87C61]/10">
-        <div className="flex items-center gap-3 md:gap-4 flex-1 min-w-0">
+      <header className="flex justify-between items-center bg-[#F4EFE6] border border-[#D5CABD] p-4 md:p-6 rounded-2xl mb-8 shadow-xl shadow-[#A87C61]/10">
+        <div className="flex items-center gap-2 md:gap-4 flex-1">
           {/* Islamic Star Logo */}
-          <div className="p-2 shrink-0">
+          <div className="p-1 md:p-2 shrink-0">
             <svg className="w-8 h-8 md:w-10 md:h-10 text-[#6D5A4B]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5">
               <rect x="4" y="4" width="16" height="16" transform="rotate(45 12 12)" />
               <rect x="4" y="4" width="16" height="16" />
             </svg>
           </div>
           
-          <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4 min-w-0">
-            <div className="min-w-0">
-              <h1 className="text-2xl md:text-3xl font-serif font-bold text-[#6D5A4B] tracking-wide truncate">
+          <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
+            <div>
+              {/* Changed font sizes for mobile to prevent truncation */}
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-serif font-bold text-[#6D5A4B] tracking-wide">
                 FUNOON 2026
               </h1>
-              <div className="text-[#A87C61] text-xs mt-1 font-semibold tracking-widest uppercase truncate">
+              <div className="text-[#A87C61] text-[10px] sm:text-xs mt-0.5 font-semibold tracking-widest uppercase">
                 Islamic Arts Fest
               </div>
             </div>
 
-            {/* Calendar and Date Section */}
-            <div className="flex items-center gap-1 text-[#8A7D71] bg-[#E5DCCB]/60 px-1.5 py-0.5 rounded-md border border-[#D5CABD]/50 w-max shrink-0">
+            {/* Compact Calendar and Date Section */}
+            <div className="flex items-center gap-1 text-[#8A7D71] bg-[#E5DCCB]/60 px-1.5 py-0.5 rounded-md border border-[#D5CABD]/50 w-max mt-1 md:mt-0 shrink-0">
               <svg className="w-3 h-3 text-[#A87C61] shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="3" y="4" width="18" height="18" rx="2" ry="2" />
                 <line x1="16" y1="2" x2="16" y2="6" />
@@ -46,9 +47,9 @@ export default function FunoonDashboard() {
         </div>
         
         {/* Total Programs */}
-        <div className="flex flex-col items-end border-l border-[#D5CABD] pl-4 md:pl-6 shrink-0">
-          <div className="text-[#8A7D71] text-xs font-bold tracking-wider uppercase mb-1">Total Programs</div>
-          <div className="bg-[#A87C61] text-[#F4EFE6] px-4 py-1.5 rounded-xl text-lg md:text-xl font-bold shadow-md">
+        <div className="flex flex-col items-end border-l border-[#D5CABD] pl-3 md:pl-6 shrink-0">
+          <div className="text-[#8A7D71] text-[10px] md:text-xs font-bold tracking-wider uppercase mb-1">Programs</div>
+          <div className="bg-[#A87C61] text-[#F4EFE6] px-3 py-1 md:px-4 md:py-1.5 rounded-xl text-base md:text-xl font-bold shadow-md">
             120
           </div>
         </div>
@@ -177,9 +178,9 @@ export default function FunoonDashboard() {
         )}
       </div>
 
-      {/* Added Announcement Section */}
-      <div className="mt-8 bg-[#F4EFE6] p-6 rounded-3xl border border-[#D5CABD] shadow-lg flex items-center justify-center text-center animate-in fade-in zoom-in duration-700">
-        <h3 className="text-xl md:text-2xl font-serif font-bold text-[#6D5A4B]">
+      {/* Announcement Section */}
+      <div className="mt-8 bg-[#F4EFE6] p-5 md:p-6 rounded-3xl border border-[#D5CABD] shadow-lg flex items-center justify-center text-center animate-in fade-in zoom-in duration-700">
+        <h3 className="text-lg sm:text-xl md:text-2xl font-serif font-bold text-[#6D5A4B] leading-relaxed">
           2026 ഫുനൂൻ കലാസാഹിത്യ മത്സരത്തിൽ സുമറദ് വിജയിച്ചിരിക്കുന്നു, ടീമിന് എല്ലാവിധ അഭിനന്ദനങ്ങളും!
         </h3>
       </div>
