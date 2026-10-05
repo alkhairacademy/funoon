@@ -1,5 +1,5 @@
 'use client';
-import React, { useState } from 'react';
+import React, useState } from 'react';
 
 export default function FunoonDashboard() {
   const [showResults, setShowResults] = useState(false);
@@ -70,16 +70,18 @@ export default function FunoonDashboard() {
           <div className="absolute inset-0 bg-gradient-to-r from-emerald-500/10 via-transparent to-emerald-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
           <div className="flex justify-between items-center mb-6 relative z-10">
             <div className="px-4 py-1.5 bg-emerald-100 text-emerald-800 rounded-xl text-xs font-bold tracking-widest uppercase shadow-sm">Team A</div>
-            <div className="text-3xl font-serif font-bold tracking-wide text-emerald-700">Zumarad</div>
+            <div className="flex flex-col items-end">
+              <div className="text-3xl font-serif font-bold tracking-wide text-emerald-700">Zumarad</div>
+               {/* Large Blinking Diamond Icon for Emerald */}
+              <div className="mt-2 animate-blink w-12 h-12 flex items-center justify-center text-emerald-600">
+                <svg className="w-10 h-10 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 2L2 12L12 22L22 12L12 2Z" />
+                </svg>
+              </div>
+            </div>
           </div>
           <div className="text-6xl font-black text-emerald-950 relative z-10">
             50 <span className="text-lg font-normal text-emerald-700/80">Points</span>
-          </div>
-          {/* Blinking Diamond Icon for Emerald */}
-          <div className="mt-4 animate-blink relative z-10 w-8 h-8 flex items-center justify-center bg-emerald-100 rounded-full text-emerald-600">
-            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M12 2L2 12L12 22L22 12L12 2Z" />
-            </svg>
           </div>
         </div>
 
@@ -88,16 +90,18 @@ export default function FunoonDashboard() {
           <div className="absolute inset-0 bg-gradient-to-r from-red-500/10 via-transparent to-red-500/10 opacity-0 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none"></div>
           <div className="flex justify-between items-center mb-6 relative z-10">
              <div className="px-4 py-1.5 bg-red-100 text-red-800 rounded-xl text-xs font-bold tracking-widest uppercase shadow-sm">Team B</div>
-            <div className="text-3xl font-serif font-bold tracking-wide text-red-700">Yaqooth</div>
+             <div className="flex flex-col items-end">
+              <div className="text-3xl font-serif font-bold tracking-wide text-red-700">Yaqooth</div>
+              {/* Large Blinking Diamond Icon for Ruby */}
+              <div className="mt-2 animate-blink w-12 h-12 flex items-center justify-center text-red-600">
+                <svg className="w-10 h-10 fill-current" viewBox="0 0 24 24">
+                  <path d="M12 2L2 12L12 22L22 12L12 2Z" />
+                </svg>
+              </div>
+            </div>
           </div>
           <div className="text-6xl font-black text-red-950 relative z-10">
             30 <span className="text-lg font-normal text-red-700/80">Points</span>
-          </div>
-          {/* Blinking Diamond Icon for Ruby */}
-          <div className="mt-4 animate-blink relative z-10 w-8 h-8 flex items-center justify-center bg-red-100 rounded-full text-red-600">
-            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
-              <path d="M12 2L2 12L12 22L22 12L12 2Z" />
-            </svg>
           </div>
         </div>
 
@@ -200,7 +204,7 @@ export default function FunoonDashboard() {
       {/* Announcement Section */}
       <div className="mt-8 bg-[#F4EFE6] p-5 md:p-6 rounded-3xl border border-[#D5CABD] shadow-lg flex items-center justify-center text-center animate-in fade-in zoom-in duration-700">
         <h3 className="text-lg sm:text-xl md:text-2xl font-serif font-bold text-[#6D5A4B] leading-relaxed">
-          2026 ഫുനൂൻ കലാസാഹിത്യ മത്സരത്തിൽ സുമറദ് വിജയിച്ചിരിക്കുന്നു, ടീമിന് എല്ലാവിധ അഭിനന്ദനങ്ങളും!
+          2026 ഫുനൂൻ കലാസാഹിത്യ മത്സരത്തിൽ സുമറദ് വിജയിച്ചിരിക്കുന്നു. ടീമിന് എല്ലാവിധ അഭിനന്ദനങ്ങളും!
         </h3>
       </div>
       
