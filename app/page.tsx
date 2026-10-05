@@ -27,7 +27,7 @@ export default function FunoonDashboard() {
         <div className="flex items-center gap-2 md:gap-4 flex-1">
           {/* Logo Image */}
           <div className="p-1 md:p-2 shrink-0">
-            <img src="/funoon.png" alt="Funoon Logo" className="w-22 h-22 md:w-26 md:h-26 object-contain" />
+            <img src="/funoon.png" alt="Funoon Logo" className="w-8 h-8 md:w-10 md:h-10 object-contain" />
           </div>
           
           <div className="flex flex-col md:flex-row md:items-center gap-2 md:gap-4">
@@ -75,12 +75,11 @@ export default function FunoonDashboard() {
           <div className="text-6xl font-black text-emerald-950 relative z-10">
             50 <span className="text-lg font-normal text-emerald-700/80">Points</span>
           </div>
-          {/* Blinking Emerald Effect */}
-          <div className="mt-4 flex items-center gap-2 text-emerald-600 font-bold tracking-widest uppercase text-xs animate-blink relative z-10">
-            <svg className="w-4 h-4 fill-current text-emerald-500" viewBox="0 0 24 24">
+          {/* Blinking Emerald Icon */}
+          <div className="mt-4 animate-blink relative z-10 w-8 h-8 flex items-center justify-center bg-emerald-100 rounded-full text-emerald-600">
+            <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
               <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
             </svg>
-            Emerald Gold
           </div>
         </div>
 
@@ -94,12 +93,11 @@ export default function FunoonDashboard() {
           <div className="text-6xl font-black text-red-950 relative z-10">
             30 <span className="text-lg font-normal text-red-700/80">Points</span>
           </div>
-          {/* Blinking Ruby Effect */}
-          <div className="mt-4 flex items-center gap-2 text-red-600 font-bold tracking-widest uppercase text-xs animate-blink relative z-10">
-            <svg className="w-4 h-4 fill-current text-red-500" viewBox="0 0 24 24">
+          {/* Blinking Ruby Icon */}
+          <div className="mt-4 animate-blink relative z-10 w-8 h-8 flex items-center justify-center bg-red-100 rounded-full text-red-600">
+             <svg className="w-5 h-5 fill-current" viewBox="0 0 24 24">
               <path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" />
             </svg>
-            Ruby Gold
           </div>
         </div>
 
@@ -202,7 +200,7 @@ export default function FunoonDashboard() {
       {/* Announcement Section */}
       <div className="mt-8 bg-[#F4EFE6] p-5 md:p-6 rounded-3xl border border-[#D5CABD] shadow-lg flex items-center justify-center text-center animate-in fade-in zoom-in duration-700">
         <h3 className="text-lg sm:text-xl md:text-2xl font-serif font-bold text-[#6D5A4B] leading-relaxed">
-          2026 ഫുനൂൻ കലാസാഹിത്യ മത്സരത്തിൽ സുമറദ് വിജയിച്ചിരിക്കുന്നു. ടീമിന് എല്ലാവിധ അഭിനന്ദനങ്ങളും!
+          2026 ഫുനൂൻ കലാസാഹിത്യ മത്സരത്തിൽ സുമറദ് വിജയിച്ചിരിക്കുന്നു, ടീമിന് എല്ലാവിധ അഭിനന്ദനങ്ങളും!
         </h3>
       </div>
       
