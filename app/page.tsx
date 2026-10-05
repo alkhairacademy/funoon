@@ -84,8 +84,8 @@ export default function FunoonDashboard() {
           <div className="text-xs text-[#4A4238] mb-1 font-bold tracking-widest uppercase opacity-70">
              Currently Leading
           </div>
-          <h2 className="text-3xl font-serif font-bold text-emerald-800 mb-0.5">Yaqooth</h2>
-          <div className="text-emerald-700/80 text-sm font-semibold tracking-wide">
+          <h2 className="text-3xl font-serif font-bold text-ruby-800 mb-0.5">Yaqooth</h2>
+          <div className="text-ruby-700/80 text-sm font-semibold tracking-wide">
             With 100  Points
           </div>
         </div>
